@@ -1,6 +1,7 @@
-ï»¿---
-layout: post
-title: '[BoostCourse] ì›¹ í”„ë¡œê·¸ë˜ë° í”„ë¡œì íŠ¸ 3-2. ì˜ˆì•½ì„œë¹„ìŠ¤: ë©”ì¸í˜ì´ì§€(FE). 1ì°¨ ì œì¶œ(PASS)'
-tags: [frontpage, jekyll, blog]
-image: '/images/posts/boostcourse.jpg'
 ---
+layout: post
+title: '[BoostCourse] À¥ ÇÁ·Î±×·¡¹Ö ÇÁ·ÎÁ§Æ® 3-2 / ¿¹¾à¼­ºñ½º: ¸ŞÀÎÆäÀÌÁö(FE) / 1Â÷ Á¦Ãâ(PASS)'
+image: '/images/posts/boostcourse.JPG'
+---
+
+Å×½ºÆ® Æ÷½ºÆÃÀÔ´Ï´Ù.
