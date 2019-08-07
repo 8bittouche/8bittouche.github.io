@@ -1,0 +1,8 @@
+﻿---
+layout: post
+title: [BoostCourse] 웹 프로그래밍 프로젝트 3-2. 예약서비스: 메인페이지(FE). 1차 제출(PASS)
+tags: [frontpage, jekyll, blog]
+image: '/images/posts/1.jpg'
+---
+
+테스트 포스팅입니다.
