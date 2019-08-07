@@ -1,8 +1,0 @@
-﻿---
-layout: post
-title: '[BoostCourse] 웹 프로그래밍 프로젝트'
-tags: [frontpage, jekyll, blog]
-image: '/images/posts/1.jpg'
----
-
-테스트 포스팅입니다.
