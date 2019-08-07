@@ -3,3 +3,6 @@ _site
 _drafts
 .DS_Store
 .jekyll-metadata
+.jekyll
+Gemfile
+Gemfile.lock
