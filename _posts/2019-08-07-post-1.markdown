@@ -19,7 +19,7 @@ Category는 크게 3가지로 구성된다.
 즉, 각 구성마다 2가지 함수로 이루어져 총 6개의 함수로 구현하였다.  
 
 ### 1) 카테고리 탭
-* sendAjaxForCategories()  
+*sendAjaxForCategories()  
 Category API를 이용한 ajax 통신을 통해 카테고리 id와 name을 받아와서 initCategoryTab 함수를 호출한다.
         
 * initCategoryTab(categories)  
