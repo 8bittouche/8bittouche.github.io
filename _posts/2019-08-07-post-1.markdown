@@ -120,9 +120,8 @@ Javascript의 closure 개념에 대해 공부하고 개선하게 되었다.
 ![Alt text](/images/posts/post_1/post_1_question_5.JPG)
 <br/>
 <br/>
- - Closure  
- https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Closures  
- 기본 개념과 예시의 참조는 위 링크  
+**Closure**  
+ [기본 개념과 예시](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Closures)
  핵심은 아래 문장이다.  
  <u>클로저는 함수와 함수가 선언된 어휘적 환경의 조합이다. 이 환경은 클로저가 생성된 시점의 유효 범위 내에 있는 모든 지역 변수로 구성된다.</u>  
  즉, 클로저는 리턴되는 함수와 그 함수가 사용할 수 있는 모든 지역 변수의 조합을 의미한다.  
