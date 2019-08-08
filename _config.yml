@@ -7,12 +7,12 @@
 
 # Site settings
 title:       J`s Developement Blog
-email:       ''
+email:       '8bittouche@gmail.com'
 description: ''
 baseurl:     '/' # The subpath of your site, e.g. /blog
 url:         'https://8bittouche.github.io/' # The base hostname & protocol for your site
 twitter:     ''
-github:      ''
+github:      'https://github.com/8bittouche'
 instagram:   ''
 facebook:    ''
 
