@@ -71,3 +71,43 @@ Ajax 함수에서 다른 함수를 연쇄적으로 호출하는 방식이 코드
 
 
 # 2. Promotion
+
+Promotion도 ajax를 통해 프로모션 데이터를 받아와서 template를 이용하여 이미지를 화면에 출력한 후 슬라이딩 기능을 구현하였다.  
+1) Ajax 통신을 통한 프로모션 데이터 받기  
+2) Template을 이용한 프로모션 이미지 출력  
+3) 슬라이딩 구현  
+
+### 1) 프로모션 데이터 받기
+**sendAjaxForPromotions() :**  
+Promotion API를 이용한 ajax 통신을 통해 프로모션 데이터를 받아와서 bindPromotionTemplateFunc 함수를 호출한다.
+
+<br/>
+
+### 2) 프로모션 이미지 출력
+**bindPromotionTemplateFunc(promotionItems) :**  
+Template을 이용하여 메인페이지의 프로모션 영역에 이미지를 출력하고 slidingImplFunc 함수를 setInterval 함수를 통해 호출한다.  
+setInterval 함수를 통해 특정 시간마다 이미지가 바뀌는 슬라이딩이 실행된다. 
+
+<br/>
+
+### 3) 슬라이딩 구현
+**slidingImplFunc() :**  
+자연스러운 슬라이딩 구현을 위해 프로모션 영역에서 나가는 이미지(slidingOutImg)와 들어오는 이미지(slidingInImg)를 구분한다.  
+![Alt text](/images/posts/post_1_promotion_1.JPG)
+slidingOutImg을 바로 slidingInImg 부분으로 옮기면 이동하는 동안 이미지가 옮겨져서 프로모션 영역에는 공백이 보여진다.  
+따라서 setTimeout을 통해 이동하는 시간만큼 딜레이한 후에 이미지를 옮기면 된다.  
+<br/>
+정리하면 아래 그림과 같은 방식으로 슬라이딩이 구현된다.  
+![Alt text](/images/posts/post_1_promotion_2.JPG)
+
+<br/>
+
+### 4) Question & FeedBack
+* 위 내용은 피드백을 반영한 내용이고 실제 제출에서는 setTimeout을 이용하지 않고 slidingOutImg이 이동하는 동안 사라지는 현상을 해결하기 위해  
+slidingOutImg을 복제하여 slidingInImg에 이동시켰다. 이 부분을 개선하여 반영하였다.  
+![Alt text](/images/posts/post_1_question_4.JPG)<br/><br/>
+* 전역변수 사용을 최소화하려는 노력으로 했던 질문이다. 코드없이 이해하기 힘든 부분이지만 함수에서 필요한 변수들을 함수 밖에서 선언했던 문제였다.  
+결국 함수 밖에서 선언했던 변수는 전역변수로 바뀌어 선언되었던 문제가 있었다.  
+Javascript의 closure 개념에 대해 공부하고 개선하게 되었다.
+![Alt text](/images/posts/post_1_question_5.JPG)<br/><br/>
+
