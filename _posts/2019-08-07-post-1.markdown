@@ -22,7 +22,6 @@ Category는 크게 3가지로 구성된다.
 ### 1) 카테고리 탭
 * sendAjaxForCategories()
 Category API를 이용한 ajax 통신을 통해 카테고리 id와 name을 받아와서 initCategoryTab 함수를 호출한다.
-
 * initCategoryTab(categories)
 template를 이용하여 카테고리 탭을 구성한다.
 
@@ -30,7 +29,6 @@ template를 이용하여 카테고리 탭을 구성한다.
 ### 2) 카테고리 상품 출력
 * sendAjaxToInit(selectedTab)
 Product API를 이용한 ajax 통신을 통해 선택된 카테고리의 상품 데이터를 받아와서 initCategoryView 함수를 호출한다.
-
 * initCategoryView(products, selectedTab)
 initCategoryView 함수는 3가지 기능을 한다.
 - template를 이용한 상품 출력
@@ -42,7 +40,6 @@ initCategoryView 함수는 3가지 기능을 한다.
 * sendAjaxToMore(start)
 Product API를 이용한 ajax 통신을 통해 추가 상품 데이터를 받아온다.  
 start를 파라미터로 하여 추가 상품의 시작지점을 표시한다.
-
 * displayMoreView(products)
 받아온 상품 데이터를 template를 이용하여 출력한다.
 
@@ -53,13 +50,10 @@ Ajax 함수에서 다른 함수를 연쇄적으로 호출하는 방식이 코드
 그래서 이 부분을 각 함수가 연관이 없도록 나누기 위해 ajax 호출을 동기식으로 바꾸는 시도를 해보았지만   
 브라우저가 응답을 멈추는 문제가 생기기 때문에 함수를 연쇄적으로 호출하는 것이 맞다는 리뷰를 받았다.  
 ![Alt text](/images/posts/post_1_question_1.JPG)
-
 * 하드코딩을 최대한 줄이려고 하였다.
 ![Alt text](/images/posts/post_1_question_2.JPG)
-
 피드백을 반영한 코드
 ![Alt text](/images/posts/post_1_question_2_feedback.JPG)
-
 * 아무 생각없이 코딩했던 부분인데 출력해야하는 상품 수가 늘어나는 상황에서 코드 수정이 필요없도록 작성할 수 있었다.
 항상 코딩할 때는 유지보수에 대해 생각해야한다는 것을 느꼈다.
 ![Alt text](/images/posts/post_1_question_3.JPG)
