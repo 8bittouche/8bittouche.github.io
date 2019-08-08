@@ -20,16 +20,16 @@ Category는 크게 3가지로 구성된다.
 
 
 ### 1) 카테고리 탭
-* sendAjaxForCategories()
+* sendAjaxForCategories()  
 Category API를 이용한 ajax 통신을 통해 카테고리 id와 name을 받아와서 initCategoryTab 함수를 호출한다.
-* initCategoryTab(categories)
+* initCategoryTab(categories)  
 template를 이용하여 카테고리 탭을 구성한다.
 
 
 ### 2) 카테고리 상품 출력
-* sendAjaxToInit(selectedTab)
+* sendAjaxToInit(selectedTab)  
 Product API를 이용한 ajax 통신을 통해 선택된 카테고리의 상품 데이터를 받아와서 initCategoryView 함수를 호출한다.
-* initCategoryView(products, selectedTab)
+* initCategoryView(products, selectedTab)  
 initCategoryView 함수는 3가지 기능을 한다.
 - template를 이용한 상품 출력
 - 상품 총 개수 표시
@@ -37,10 +37,10 @@ initCategoryView 함수는 3가지 기능을 한다.
 
 
 ### 3) '더보기'버튼
-* sendAjaxToMore(start)
+* sendAjaxToMore(start)  
 Product API를 이용한 ajax 통신을 통해 추가 상품 데이터를 받아온다.  
 start를 파라미터로 하여 추가 상품의 시작지점을 표시한다.
-* displayMoreView(products)
+* displayMoreView(products)  
 받아온 상품 데이터를 template를 이용하여 출력한다.
 
 
