@@ -55,11 +55,11 @@ start를 파라미터로 하여 추가 상품의 시작지점을 표시한다.
 Ajax 함수에서 다른 함수를 연쇄적으로 호출하는 방식이 코드에 대한 이해도를 떨어뜨린다는 생각이 들었다.  
 그래서 이 부분을 각 함수가 연관이 없도록 나누기 위해 ajax 호출을 동기식으로 바꾸는 시도를 해보았지만   
 브라우저가 응답을 멈추는 문제가 생기기 때문에 함수를 연쇄적으로 호출하는 것이 맞다는 리뷰를 받았다.  
-![Alt text](/images/posts/post_1_question_1.JPG)<br/>
+![Alt text](/images/posts/post_1_question_1.JPG)<br/><br/>
 * 하드코딩을 최대한 줄이려고 하였다.
-![Alt text](/images/posts/post_1_question_2.JPG)<br/>
+![Alt text](/images/posts/post_1_question_2.JPG)<br/><br/>
 피드백을 반영한 코드
-![Alt text](/images/posts/post_1_question_2_feedback.JPG)<br/>
+![Alt text](/images/posts/post_1_question_2_feedback.JPG)<br/><br/>
 * 아무 생각없이 코딩했던 부분인데 출력해야하는 상품 수가 늘어나는 상황에서 코드 수정이 필요없도록 작성할 수 있었다.
 항상 코딩할 때는 유지보수에 대해 생각해야한다는 것을 느꼈다.
 ![Alt text](/images/posts/post_1_question_3.JPG)
