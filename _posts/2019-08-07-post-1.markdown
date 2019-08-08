@@ -62,7 +62,7 @@ Ajax 함수에서 다른 함수를 연쇄적으로 호출하는 방식이 코드
 ![Alt text](/images/posts/post_1/post_1_question_2.JPG)
 <br/><br/>
 피드백을 반영한 코드
-![Alt text](/images/posts/post_1_question_2_feedback.JPG)
+![Alt text](/images/posts/post_1/post_1_question_2_feedback.JPG)
 <br/>
 <br/>
 * 아무 생각없이 코딩했던 부분인데 출력해야하는 상품 수가 늘어나는 상황에서 코드 수정이 필요없도록 작성할 수 있었다.
