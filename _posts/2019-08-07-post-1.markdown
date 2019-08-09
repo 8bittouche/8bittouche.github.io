@@ -5,7 +5,7 @@ tags: [BoostCourse]
 image: '/images/posts/boostcourse.JPG'
 ---
 
-# *본 포스팅은 부스트코스 웹 프로그래밍 에이스 과정 학습내용공유 미션입니다.*  
+### *본 포스팅은 부스트코스 웹 프로그래밍 에이스 과정 학습내용공유 미션입니다.*  
 
 
 BE파트를 통해 구현된 API를 이용하여 동적으로 필요한 데이터를 받아 Category와 Promotion 기능을 구현하였다.  
