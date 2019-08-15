@@ -42,12 +42,15 @@ LocalDateTime과 String 타입 중에서 간단하게 처리하도록 String으�
 
 ### 2) DisplayInfo 응답객체와 CommentImages 처리
 필요한 DTO를 작성하고, API의 응답객체로 DisplayInfoResponse를 따로 만들었다.  
-프로젝트 3에서 'map객체 vs Generic을 활용한 응답클래스' 이슈가 있었다.  
+프로젝트 3-1에서 '**map객체 vs Generic을 활용한 응답클래스**' 이슈가 있었다.  
 map의 key이름이 바뀌는 경우 유지보수가 힘들다는 문제로 인해 응답클래스를 따로 작성하도록 리뷰받았었다.  
-프로젝트 4에서도 마찬가지로 DisplayInfo 응답클래스를 따로 작성하였고  
+프로젝트 4-1에서도 마찬가지로 DisplayInfo 응답클래스를 따로 작성하였고  
 이 때, Comment부분에 들어가는 CommentImages에 대한 처리는 Service 부분에서 다루었다.  
 즉, CommentImages는 응답클래스의 속성으로 선언하지 않는다.  
-
+프로젝트 3-1 당시에 질문과 답변  
+![Alt text](/images/posts/post_2/post_2_question_2_answer.JPG)
+![Alt text](/images/posts/post_2/post_2_question_3.JPG)
+![Alt text](/images/posts/post_2/post_2_question_3_answer.JPG)
 <br/><br/>
 
 
