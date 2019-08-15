@@ -103,8 +103,11 @@ Controller Layer에서는 Service layer에서 리턴받은 응답객체를 그�
 <br/>
 
 # 4. FeedBack
-![Alt text](/images/posts/post_2/post_2_feedback_1.JPG)<br/>
-![Alt text](/images/posts/post_2/post_2_feedback_2.JPG)<br/>
-![Alt text](/images/posts/post_2/post_2_feedback_3.JPG)<br/>
-![Alt text](/images/posts/post_2/post_2_feedback_4.JPG)<br/>
-![Alt text](/images/posts/post_2/post_2_feedback_5.JPG)<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_1.JPG){: height:"160px"}<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_2.JPG){: height:"350px"}<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_3.JPG){: height:"160px"}<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_4.JPG){: height:"150px"}<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_5.JPG){: height:"150px"}<br/>
+
+<br/>
+<br/>
