@@ -18,11 +18,11 @@ image: '/images/posts/boostcourse.JPG'
 
 <br/>
 
-설계는 다음 순서로 진행한다.  
+다음 순서로 진행한다.  
 1. DTO  
 2. DAO  
 3. Service & Controller  
- 
+4. FeedBack 
   
 <br/>
 
