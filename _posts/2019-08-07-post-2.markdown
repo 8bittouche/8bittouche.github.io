@@ -18,8 +18,8 @@ product API의 displayInfoId가 파라미터로 전달되는 API를 구현하였
 설계는 다음 순서로 진행한다.  
 1. DTO  
 2. DAO  
-3. Service  
-4. Controller  
+3. Service & Controller  
+ 
   
 <br/>
 
@@ -69,11 +69,11 @@ map의 key이름이 바뀌는 경우 유지보수가 힘들다는 문제로 인�
 # 2. DAO
 Dao 파트에서는 3가지 정도 고려사항이 있었다.  
 ### 1) Dao를 나누는 기준은 무엇인가?
-Dto 작성을 마치고나서 각 Dto마다 Dao를 만들어줘야하는 건지 Dao를 나누는 기준이 무엇인지 헷갈렸다.  
+각 Dto마다 Dao를 만들어하는지 Service마다 Dao를 만들어야하는지.. Dao를 나누는 기준이 무엇인지 헷갈렸다.  
 (실무에서 실제로 어떻게 Dao를 나누고 있는지 볼 수 있다면 바로 이해할 수 있겠지만... 
-아직 실무경험이 없고 웹 개발을 처음접하는 입문자 입장에서는 이런 사소한 것도 헷갈렸다..)
+아직 실무경험이 없는 웹 개발 입문자 입장에서는 이런 사소한 것도 헷갈렸다..)  
 적절히 의미있는 것들끼리 묶어서 Dao를 작성하였다.  
-Product끼리, DisplayInfo끼리, Comment끼리.. 이런식  
+(Product끼리, DisplayInfo끼리, Comment끼리.. 이런식)
 <br/>
 
 ### 2) SQL문 작성
@@ -85,14 +85,19 @@ SQL문 작성에서 고려할 것은 다음 3가지였다.
 
 ### 3) NamedParameterJdbcTemplate 활용
 Dao의 각 메소드마다 활용하는 NamedParameterJdbcTemplate의 메소드가 다를 수 있다.  
-NamedParameterJdbcTemplate 공식 레퍼런스를 참고하여 작성했다.  
-[NamedParameterJdbcTemplate 링크](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate.html)
+NamedParameterJdbcTemplate 레퍼런스를 참고하여 작성했다.  
+[NamedParameterJdbcTemplate 레퍼런스 링크](https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate.html)
+<br/>
 <br/>
 
 
-
 *****
+<br/>
 
+# 3. Service & Controller
+Dto와 Dao 작성이 끝나면 Service Layer와 Controller Layer에서는 크게 고려해야할 부분이 많지는 않았다.  
+Service Layer에서 Dao를 통해 필요한 데이터를 받아와서 DisplayInfoResponse 응답객체를 리턴하고  
+Controller Layer에서는 Service layer에서 리턴받은 응답객체를 그대로 리턴하였다.  
+즉, 필요한 로직은 전부 Service Layer에 넣고 Controller Layer는 응답객체를 리턴하는 정도로만 구현하였다.  
 
-# 3. Service
 
