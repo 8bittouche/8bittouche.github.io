@@ -42,7 +42,7 @@ LocalDateTime과 String 타입 중에서 간단하게 처리하도록 String으�
 ![Alt text](/images/posts/post_2/post_2_question_1_answer.JPG)<br/><br/>
 
 
-### 2) DisplayInfo 응답객체와 CommentImages 처리
+### 2) DisplayInfoResponse 응답객체와 CommentImages 처리
 필요한 DTO를 작성하고, API의 응답객체로 DisplayInfoResponse를 따로 만들었다.  
 프로젝트 3-1에서 '**map객체 vs Generic을 활용한 응답클래스**' 이슈가 있었다.  
 map의 key이름이 바뀌는 경우 유지보수가 힘들다는 문제로 인해 응답클래스를 따로 작성하도록 리뷰받았었다.  
@@ -99,5 +99,12 @@ Dto와 Dao 작성이 끝나면 Service Layer와 Controller Layer에서는 크게
 Service Layer에서 Dao를 통해 필요한 데이터를 받아와서 DisplayInfoResponse 응답객체를 리턴하고  
 Controller Layer에서는 Service layer에서 리턴받은 응답객체를 그대로 리턴하였다.  
 즉, 필요한 로직은 전부 Service Layer에 넣고 Controller Layer는 응답객체를 리턴하는 정도로만 구현하였다.  
+<br/>
+<br/>
 
-
+# 4. FeedBack
+![Alt text](/images/posts/post_2/post_2_feedback_1.JPG)<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_2.JPG)<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_3.JPG)<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_4.JPG)<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_5.JPG)<br/>
