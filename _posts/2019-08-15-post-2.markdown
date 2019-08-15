@@ -10,11 +10,11 @@ image: '/images/posts/boostcourse.JPG'
 <br/>
 
 # 0. 요약
-###### 프로젝트 4는 메인페이지의 상품이미지를 클릭하면 이동하는 상세페이지의 구현이다.  
-###### 프로젝트 4에서는 FE에 대한 개념(객체 리터럴 패턴, Javascript 라이브러리, 클린코드)을 추가적으로 배우고 상세페이지를 구현하는 데 초점이 맞춰져있다.  
-###### 프로젝트 4의 BE파트는 상세페이지 구현에 필요한 데이터를 받아오는 API의 설계이다.  
-product API의 displayInfoId가 파라미터로 전달되는 API를 구현하였다.  
-![Alt text](/images/posts/post_2/post_2_api.JPG){: height="40px"}<br/>
+###### - 프로젝트 4는 메인페이지의 상품이미지를 클릭하면 이동하는 상세페이지의 구현이다.  
+###### - 프로젝트 4에서는 FE에 대한 개념(객체 리터럴 패턴, Javascript 라이브러리, 클린코드)을 추가적으로 배우고 상세페이지를 구현하는 데 초점이 맞춰져있다.  
+###### - 프로젝트 4의 BE파트는 상세페이지 구현에 필요한 데이터를 받아오는 API의 설계이다.  
+&nbsp; product API의 displayInfoId가 파라미터로 전달되는 API를 구현하였다.  
+&nbsp; ![Alt text](/images/posts/post_2/post_2_api.JPG){: height="40px"}<br/>
 
 
 설계는 다음 순서로 진행한다.  
