@@ -26,6 +26,8 @@ image: '/images/posts/boostcourse.JPG'
   
 <br/>
 
+*****
+
 # 1. DTO
 
 [Swagger API 링크](http://49.236.147.192:9090/swagger-ui.html)  
@@ -66,7 +68,6 @@ map의 key이름이 바뀌는 경우 유지보수가 힘들다는 문제로 인�
 
 
 
-
 *****
 
 
@@ -94,8 +95,8 @@ NamedParameterJdbcTemplate 레퍼런스를 참고하여 작성했다.
 <br/>
 <br/>
 
-
 *****
+
 <br/>
 
 # 3. Service & Controller
@@ -105,6 +106,8 @@ Controller Layer에서는 Service layer에서 리턴받은 응답객체를 그�
 즉, 필요한 로직은 전부 Service Layer에 넣고 Controller Layer는 응답객체를 리턴하는 정도로만 구현하였다.  
 <br/>
 <br/>
+
+*****
 
 # 4. FeedBack
 ![Alt text](/images/posts/post_2/post_2_feedback_1.JPG){: height="160px"}<br/>
