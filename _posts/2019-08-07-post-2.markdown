@@ -8,11 +8,11 @@ image: '/images/posts/boostcourse.JPG'
 ### *본 포스팅은 부스트코스 웹 프로그래밍 에이스 과정 학습내용공유 미션입니다.*  
 
 
-* 프로젝트 4는 메인페이지의 상품이미지를 클릭하면 이동하는 상세페이지의 구현이다.  
-* 프로젝트 4에서는 FE에 대한 개념(객체 리터럴 패턴, Javascript 라이브러리, 클린코드)을 추가적으로 배우고 상세페이지를 구현하는 데 초점이 맞춰져있다.  
-* 프로젝트 4의 BE파트는 상세페이지 구현에 필요한 데이터를 받아오는 API의 설계이다.  
+##### 프로젝트 4는 메인페이지의 상품이미지를 클릭하면 이동하는 상세페이지의 구현이다.  
+##### 프로젝트 4에서는 FE에 대한 개념(객체 리터럴 패턴, Javascript 라이브러리, 클린코드)을 추가적으로 배우고 상세페이지를 구현하는 데 초점이 맞춰져있다.  
+##### 프로젝트 4의 BE파트는 상세페이지 구현에 필요한 데이터를 받아오는 API의 설계이다.  
 product API의 displayInfoId가 파라미터로 전달되는 API를 구현하였다.  
-![Alt text](/images/posts/post_2/post_2_api.JPG)<br/>
+![Alt text](/images/posts/post_2/post_2_api.JPG){: height="40px"}<br/>
 
 
 설계는 다음 순서로 진행한다.  
@@ -104,11 +104,11 @@ Controller Layer에서는 Service layer에서 리턴받은 응답객체를 그�
 
 # 4. FeedBack
 ![Alt text](/images/posts/post_2/post_2_feedback_1.JPG){: height="160px"}<br/>
-![Alt text](/images/posts/post_2/post_2_feedback_4.JPG){: height="350px"}<br/>
-![Alt text](/images/posts/post_2/post_2_feedback_5.JPG){: height="160px"}<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_4.JPG){: height="140px"}<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_5.JPG){: height="150px"}<br/>
 사소한 코딩습관을 지적해주셔서 좋았다.<br/><br/>
 
-![Alt text](/images/posts/post_2/post_2_feedback_2.JPG){: height="140px"}<br/>
+![Alt text](/images/posts/post_2/post_2_feedback_2.JPG){: height="350px"}<br/>
 ![Alt text](/images/posts/post_2/post_2_feedback_3.JPG){: height="150px"}<br/>
 피드백 해주신 부분을 수정하여 반영하였다.<br/><br/>
 <br/>
