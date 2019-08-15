@@ -29,8 +29,12 @@ Swagger API의 내용을 참고하여 필요한 DTO를 작성하였다.
 특히, DB의 DATETIME 타입을 받아오는 경우에 java에서 어떤 타입을 선언할 지 결정해야한다.  
 LocalDateTime과 String 타입 중에서 간단하게 처리하도록 String으로 처리하였다.
 이 부분에 대한 질문과 리뷰어님의 답변
+*****
 ![Alt text](/images/posts/post_2/post_2_question_1.JPG)
+*****
 ![Alt text](/images/posts/post_2/post_2_question_1_answer.JPG)
+*****
+
 
 
 *****
