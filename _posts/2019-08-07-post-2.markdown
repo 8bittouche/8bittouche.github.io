@@ -26,18 +26,29 @@ product API의 displayInfoId가 파라미터로 전달되는 API를 구현하였
 Swagger API의 내용을 참고하여 필요한 DTO를 작성하였다.  
 이 부분에서는 이미 완성되어 제공되는 API를 참고하여 필요한 속성을 선언해주면 되므로 크게 어려운 부분이 없었다.  
 (백엔드 개발자는 API 설계에 필요한 데이터와 구조가 무엇인지 생각해야할 것 같은데, 이 프로젝트에서는 완성된 API 형태가 제공되어 설계하기가 수월한 것 같다.)  
-한 가지 고려해야할 부분은 '**속성을 어떤 타입으로 선언할 것인가**'라는 문제이다.  
+<br/>
+DTO 파트에서는 2가지 고려사항이 있었다.  
+### 1) 속성을 어떤 타입으로 선언할 것인가?
 특히, DB의 DATETIME 타입을 받아오는 경우에 java에서 어떤 타입을 선언할 지 결정해야한다.  
 LocalDateTime과 String 타입 중에서 간단하게 처리하도록 String으로 처리하였다.
 이 부분에 대한 질문과 리뷰어님의 답변  
-**Question**
+**[Question]**
 ![Alt text](/images/posts/post_2/post_2_question_1.JPG)
-**Answer**
+<br/>
+**[Answer]**
 ![Alt text](/images/posts/post_2/post_2_question_1_answer.JPG)
 
 <br/><br/>
 
+### 2) DisplayInfo 응답객체와 CommentImages 처리
+필요한 DTO를 작성하고, API의 응답객체로 DisplayInfoResponse를 따로 만들었다.  
+프로젝트 3에서 'map객체 vs Generic을 활용한 응답클래스' 이슈가 있었다.  
+map의 key이름이 바뀌는 경우 유지보수가 힘들다는 문제로 인해 응답클래스를 따로 작성하도록 리뷰받았었다.  
+프로젝트 4에서도 마찬가지로 DisplayInfo 응답클래스를 따로 작성하였고  
+이 때, Comment부분에 들어가는 CommentImages에 대한 처리는 Service 부분에서 다루었다.  
+즉, CommentImages는 응답클래스의 속성으로 선언하지 않는다.  
 
+<br/><br/>
 
 
 
