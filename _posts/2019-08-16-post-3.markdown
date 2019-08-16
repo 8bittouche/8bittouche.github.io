@@ -40,7 +40,9 @@ image: '/images/posts/boostcourse.JPG'
 크게 5개의 객체로 나누고 필요한 DOM Element와 기능을 객체의 속성과 함수로 작성하였다.  
 <br/>
 <br/>
+
 *****
+
 # 1. 배경 영역
 ### 1) sectionDetails
 sectionDetails은 상품설명을 노출하고 접기/펼쳐보기 버튼에 이벤트를 등록하여 접기/펼치기 기능을 구현한다.  
@@ -69,11 +71,14 @@ sectionVisual은 먼저 ajax를 통해 받아온 배경이미지를 노출해야
 
 
 <br/>
+
 *****
+
 # 3. 하단 상품정보 탭
 
 
 <br/>
+
 *****
 
 # 4. FeedBack
