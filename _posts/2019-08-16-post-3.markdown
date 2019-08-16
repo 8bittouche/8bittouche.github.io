@@ -58,13 +58,14 @@ sectionVisual은 먼저 ajax를 통해 받아온 배경이미지를 노출해야
 프로젝트 3-2 프로모션 영역의 슬라이딩 구현과 비슷한 방식으로 구현하였지만 아이디어는 약간 달라졌다.  
 아래와 같이 ma와 et 이미지를 번갈아가며 4개를 나열한다.  
 버튼 클릭 시 이미지들이 이동하며 슬라이딩이 구현되고 4개의 이미지를 나열한 이유는 양방향으로 구현하기위한 목적이다.  
-![Alt text](/images/posts/post_3/post_3_sliding_1.JPG)<br/>
+![Alt text](/images/posts/post_3/post_3_sliding_1.JPG)
 ![Alt text](/images/posts/post_3/post_3_sliding_2.JPG)
-위 과정을 무한 반복한다.<br/>
-
-
+위 과정을 무한 반복한다.  
+반대 방향도 마찬가지로 구현한다.  
 <br/>
+
 *****
+
 # 2. 한줄평 영역
 
 
