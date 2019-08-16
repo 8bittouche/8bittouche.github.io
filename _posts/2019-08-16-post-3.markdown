@@ -21,7 +21,7 @@ image: '/images/posts/boostcourse.JPG'
 1. 배경 영역 
 2. 한줄평 영역  
 3. 하단 상품정보 탭  
-4. FeedBack  
+4. Question & FeedBack  
   
 <br/>
 
@@ -43,7 +43,7 @@ image: '/images/posts/boostcourse.JPG'
 
 # 1. 배경 영역
 ### 1) sectionDetails
-sectionDetails은 상품설명을 노출하고 접기/펼쳐보기 버튼에 이벤트를 등록하여 접기/펼치기 기능을 구현한다.  
+sectionDetails는 상품설명을 노출하고 접기/펼쳐보기 버튼에 이벤트를 등록하여 접기/펼치기 기능을 구현한다.  
 제공되는 style.css에 클래스 close3의 스타일이 구현되어있다.  
 상품설명이 보이는 DOM Element에 close3클래스를 추가하거나 삭제하는 방식으로 접기/펼치기 기능을 구현하였다.  
 이 때 className 프로퍼티와 classList 프로퍼티를 사용할 수 있다.  
@@ -67,17 +67,23 @@ sectionVisual은 먼저 ajax를 통해 받아온 배경이미지를 노출해야
 *****
 
 # 2. 한줄평 영역
-
-
+### 1) sectionReviewList
+sectionReviewList는 한줄평 노출과 평점 매기기를 구현한다.  
+이 부분은 크게 어려운 부분은 없었지만 보안 관련하여 리뷰를 받았다.  
+Email을 노출할 때 '****' 문자열을 붙여서 노출했는데 이 부분이 문제가 되었다.  
+개발자도구를 열어 코드를 수정하면 충분히 해당 Email 정보를 알아낼 수가 있었다.  
+![Alt text](/images/posts/post_3/post_3_feedback_1.JPG)
+난독화 툴에 대한 학습을 해야겠다.
 <br/>
 
 *****
 
 # 3. 하단 상품정보 탭
-
-
+### 1) sectionInfoTab
+sectionInfoTab은 상품정보를 노출하고 상세정보/오시는길에 대해 탭 UI를 구현한다.  
+이 부분 역시 카테고리 탭 구현과 접기/펼치기 기능 등을 구현하며 익혔던 방식과 유사하여 어려운 점은 없었다.
 <br/>
 
 *****
 
-# 4. FeedBack
+# 4. Question & FeedBack
