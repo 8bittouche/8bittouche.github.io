@@ -89,26 +89,26 @@ sectionInfoTab은 상품정보를 노출하고 상세정보/오시는길에 대�
 # 4. Question & FeedBack
 ![Alt text](/images/posts/post_3/post_3_feedback_2.JPG)
 역시 유지보수성이 좋은 코드를 작성하는 습관을 길러야겠다. 
-<br/><br/><br/>
+<br/><br/>
 
 ![Alt text](/images/posts/post_3/post_3_feedback_3.JPG)
 사소한 팁을 받아 좋았다.
-<br/><br/><br/>
+<br/><br/>
 
 ![Alt text](/images/posts/post_3/post_3_feedback_4.JPG)
 이 질문을 통해 **SSR(Server Side Rendering) vs CSR(Client Side Rendering)** 이슈를 알 수 있었다.  
-관련된 많은 글들이 있었지만 현재 상태에서 간단하게 알고가야할 부분만 정리했다.
+관련된 많은 글들이 있었지만 현재 상태에서 간단하게 알고가야할 부분만 정리했다.  
 [SSR vs CSR 참고링크](https://velog.io/@rjs1197/SSR%EA%B3%BC-CSR%EC%9D%98-%EC%B0%A8%EC%9D%B4%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90)  
-* SSR(Server Side Rendering)
+* **SSR(Server Side Rendering)**
     - 서버에서 View를 렌더링하여 전달하기 때문에 초기 View 로딩 속도가 빠르다.
     - 빠른 초기 View 로딩으로 인해 사용자는 매우 빠르게 화면이 로딩되었다고 느끼게 된다.
     - JS 파일을 다운로드 받아 적용하기 전까지 기능 동작이 이루어지지 않는다.
 <br/>
-* CSR(Client Side Rendering)
+* **CSR(Client Side Rendering)**
     - HTML, JS, CSS 등 리소스를 다운로드한 후에 브라우저에서 렌더링하기 때문에 초기 View 로딩 속도가 상대적으로 느리다.
     - View가 보여지는 동시에 기능이 동작한다.
 <br/>
-* SEO(Search Engine Optimization)
+* **SEO(Search Engine Optimization)**
     - SEO는 검색 엔진에 서비스를 노출시키는 전략을 의미
     - CSR은 View 생성 전까지 검색 엔진 크롤러의 데이터 수집에 제한이 있어서 SEO에 유리하지 않음
     - SSR은 서버에서 View를 렌더링하여 제공하기 때문에 상대적으로 SEO에 유리해져 사용자 유입이 많음
