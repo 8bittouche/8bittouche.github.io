@@ -90,7 +90,7 @@ sectionInfoTab은 상품정보를 노출하고 상세정보/오시는길에 대�
 사소한 팁을 받아 좋았다.
 <br/><br/>
 
-![Alt text](/images/posts/post_3/post_3_feedback_4.JPG)
+![Alt text](/images/posts/post_3/post_3_feedback_4.JPG)<br/>
 이 질문을 통해 **SSR(Server Side Rendering) vs CSR(Client Side Rendering)** 이슈를 알 수 있었다.  
 관련된 많은 글들이 있었지만 현재 상태에서 간단하게 알고가야할 부분만 정리했다.  
 [SSR vs CSR 참고링크](https://velog.io/@rjs1197/SSR%EA%B3%BC-CSR%EC%9D%98-%EC%B0%A8%EC%9D%B4%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90)  
