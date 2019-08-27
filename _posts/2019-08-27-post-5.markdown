@@ -1,0 +1,55 @@
+﻿---
+layout: post
+title: '[BoostCourse] 웹 프로그래밍 프로젝트 5-1 / 예약서비스: 예약하기(BE) / 2차 제출(PASS)'
+tags: [BoostCourse]
+image: '/images/posts/boostcourse.JPG'
+---
+
+### *본 포스팅은 부스트코스 웹 프로그래밍 에이스 과정 학습내용공유 미션입니다.*  
+
+<br/>
+
+# 0. 요약
+###### - 프로젝트 5는 예약하기와 나의 예매 내역 확인 기능을 구현한다.
+###### - 프로젝트 5의 FE는 생성자 패턴, 정규표현식, form 데이터 전송과 유효성 검증 개념을 반영하여 구현한다. 
+###### - 프로젝트 5의 BE는 예약정보 조회, 예약하기, 예약 취소하기 기능을 하는 Reservation Api를 구현한다.
+&nbsp;&nbsp; 아래 기능을 하는 Reservation API를 구현하였다.
+&nbsp;&nbsp; ![Alt text](/images/posts/post_4/post_4_api.JPG)<br/>
+
+<br/>
+
+2차 제출에서는 1차 제출에서 받은 리뷰를 반영하고, 예약하기 이후에 메인페이지로 리다이렉트가 안되는 문제를 해결하여 PASS를 받았다.  
+그리고 추가적으로 공부할 개념에 대한 리뷰를 받았다.  
+  
+<br/>
+
+*****
+
+# 1. 메인페이지 리다이렉트(Redirect)  
+처음에 기존에 실습했던 것처럼 Controller에서 리다이렉트하도록 시도하였다.  
+@Controller가 붙어있는 부분에서 "redirect:/mainpage"와 같이 리다이렉트했을 때 화면전환이 잘 이루어졌었다.  
+하지만 API Controller에 @RestController를 붙여놓아서 이에 대한 리다이렉트 방법을 찾아보았다.
+[@RestController 리다이렉트 방법 링크1](https://cnpnote.tistory.com/entry/SPRING-spring4-RestController%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-jsp-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%A5%BC-%EB%B0%98%ED%99%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)  
+[@RestController 리다이렉트 방법 링크2](https://stackoverflow.com/questions/29085295/spring-mvc-restcontroller-and-redirect)  
+하지만 어째서인지.. GET 요청으로 mainpage를 받아오지만 화면 전환이 이루어지지는 않았다.  
+구글링결과 @RestController는 뷰(View)를 반환하지 않고, 데이터를 반환하기 때문에 View전환이 이루어지지 않는다고 했다.  
+<br/>
+그 다음에는 @RestController로 선언된 부분을 @Controller로 바꾸고  
+데이터 반환이 필요한 부분에는 @ResponseBody를 붙이고, 리다이렉트가 필요한 부분에는 "redirect:/mainpage"와 같이 작성해보았다.  
+하지만 이번에도 화면 전환이 되지는 않았다.  
+<br/>
+그래서 결국에는 FE단에서 window.location.href를 통해 메인페이지로 화면 전환을 이루었다.  
+이 부분에 대해서 문제가 될 것이라 생각하여 질문을 드렸는데.. 맞는 방식이라고 답변을 해주셨다.  
+<br/>
+![Alt text](/images/posts/post_5/post_5_question_1.JPG)<br/>
+![Alt text](/images/posts/post_5/post_5_answer_1.JPG)<br/>
+
+
+*****
+
+# 2. FeedBack  
+![Alt text](/images/posts/post_5/post_5_feedback_1.JPG)<br/>
+![Alt text](/images/posts/post_5/post_5_feedback_2.JPG)<br/>
+![Alt text](/images/posts/post_5/post_5_feedback_3.JPG)<br/>
+![Alt text](/images/posts/post_5/post_5_feedback_4.JPG)<br/>
+
