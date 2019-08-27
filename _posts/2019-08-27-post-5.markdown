@@ -41,6 +41,7 @@ API Controller에 @RestController를 붙여놓아서 이에 대한 리다이렉�
 그래서 결국에는 FE단에서 window.location.href를 통해 메인페이지로 화면 전환을 이루었다.  
 이 부분에 대해서 문제가 될 것이라 생각하여 질문을 드렸는데.. 맞는 방식이라고 답변을 해주셨다.  
 <br/>
+<br/>
 **질문과 답변**
 ![Alt text](/images/posts/post_5/post_5_question_1.JPG)<br/>
 ![Alt text](/images/posts/post_5/post_5_answer_1.JPG)<br/>
