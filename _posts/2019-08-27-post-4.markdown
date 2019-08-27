@@ -1,0 +1,78 @@
+﻿---
+layout: post
+title: '[BoostCourse] 웹 프로그래밍 프로젝트 5-1 / 예약서비스: 예약하기(BE) / 1차 제출(FAIL)'
+tags: [BoostCourse]
+image: '/images/posts/boostcourse.JPG'
+---
+
+### *본 포스팅은 부스트코스 웹 프로그래밍 에이스 과정 학습내용공유 미션입니다.*  
+
+<br/>
+
+# 0. 요약
+###### - 프로젝트 5는 예약하기와 나의 예매 내역 확인 기능을 구현한다.
+###### - 프로젝트 5의 FE는 생성자 패턴, 정규표현식, form 데이터 전송과 유효성 검증 개념을 반영하여 구현한다. 
+###### - 프로젝트 5의 BE는 예매 내역 받아오기, 예매 내역 보내기, 예매 내역 수정하기 기능을 하는 Reservation Api를 구현한다.
+&nbsp;&nbsp; 아래 기능을 하는 Reservation API를 구현하였다.
+&nbsp;&nbsp; ![Alt text](/images/posts/post_4/post_4_api.JPG){: height="40px"}<br/>
+
+<br/>
+
+이번 파트에서는 전체적으로 4-1과 진행방식이 비슷하여 몇 가지 실패했던 문제를 중심으로 작성했습니다.  
+다음 순서로 진행한다.  
+1. DTO & DAO 
+2. Service & Controller  
+3. FeedBack 
+  
+<br/>
+
+*****
+
+# 1. DTO & DAO 
+
+[Swagger API 링크](http://49.236.147.192:9090/swagger-ui.html)  
+Swagger API의 내용을 참고하여 필요한 DTO를 작성하였다.  
+지난 프로젝트 4-1에서와 마찬가지로 제공되는 API를 참고하여 DTO를 작성하였다.  
+하지만 ReservationPrice의 경우에 price 속성을 추가하여 product_price 테이블을 따로 참조하지 않도록 하였다.
+<br/>
+이번 DAO에서는 SELECT 기능을 하는 부분에 더하여 INSERT와 UPDATE하는 기능을 추가로 구현했다.  
+
+
+*****
+
+
+# 2. Service & Controller
+이번 파트에서는 Service Layer를 구현하는 부분에서 문제가 발생했다.  
+Service Layer는 구현해야하는 API의 3가지 기능을 중심으로 구성된다.  
+**1) 예약정보 조회**  
+예약정보를 담고있는 객체 reservations의 내용을 완성하는 completeReservationInfo 메소드를 작성하였는데, 이 부분에서 문제가 있었다.  
+![Alt text](/images/posts/post_4/post_4_feedback_1.JPG)<br/>
+리스트를 종주한다거나 메소드는 단수를 받아서 단수를 리턴하는 것 등 메소드 작성의 기본방식을 알 수 있도록 답변해주셨다.  
+이 내용을 반영하면서 코드가 깔끔해진 것을 확실히 느낄 수 있었다.  
+<br/>
+<br/>
+**2) 예약하기**  
+결정적으로 이번 프로젝트의 가장 문제가 되는 부분이었다.  
+예약하기 기능은 ReservationInfo와 ReservationPrice를 DB에 Insert해야해서 이 2가지 기능을 분리하여 작성하였다.  
+여기서 문제가 발생하게 되는데, 2가지 Insert기능이 분리되면서 하나의 Transaction으로 묶이지 못하여 데이터 정합 문제가 발생하게 되고  
+ReservationInfoId를 공유해야하기 때문에 이를 ReservationServiceImpl 클래스의 속성으로 사용하여 잘못된 코딩을 하게 되버렸다.  
+또한 ReservationResponse라는 응답객체를 작성하게 되면서 코드가 길어지고 불필요한 DB 질의를 하여 비효율성이 증가하였다.  
+이 부분에 대한 리뷰어님의 피드백  
+![Alt text](/images/posts/post_4/post_4_feedback_2.JPG)<br/>
+![Alt text](/images/posts/post_4/post_4_feedback_3.JPG)<br/>
+![Alt text](/images/posts/post_4/post_4_feedback_4.JPG)<br/>
+<br/>
+<br/>
+**3) 예약 취소하기**  
+예약 취소하기 기능은 Dao의 update 기능을 구현하면 된다.  
+
+
+*****
+
+# 3. FeedBack
+![Alt text](/images/posts/post_4/post_4_feedback_5.JPG)<br/>
+![Alt text](/images/posts/post_4/post_4_feedback_6.JPG)<br/>
+![Alt text](/images/posts/post_4/post_4_feedback_7.JPG)<br/>
+사소한 코딩습관과 네이밍을 하는 관점을 배울 수 있어서 좋았다.  
+<br/>
+<br/>
