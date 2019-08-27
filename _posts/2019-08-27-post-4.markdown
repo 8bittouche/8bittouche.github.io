@@ -18,7 +18,7 @@ image: '/images/posts/boostcourse.JPG'
 
 <br/>
 
-**이번 파트에서는 전체적으로 4-1과 진행방식이 비슷하여 몇 가지 실패했던 문제를 중심으로 작성했습니다.**
+**이번 파트에서는 전체적으로 4-1과 진행방식이 비슷하여 몇 가지 실패했던 문제를 중심으로 작성했습니다.**  
 다음 순서로 진행한다.  
 1. DTO & DAO 
 2. Service & Controller  
@@ -33,7 +33,7 @@ image: '/images/posts/boostcourse.JPG'
 [Swagger API 링크](http://49.236.147.192:9090/swagger-ui.html)  
 Swagger API의 내용을 참고하여 필요한 DTO를 작성하였다.  
 지난 프로젝트 4-1에서와 마찬가지로 제공되는 API를 참고하여 DTO를 작성하였다.  
-하지만 ReservationPrice의 경우에 price 속성을 추가하여 product_price 테이블을 따로 참조하지 않도록 하였다.
+**하지만 ReservationPrice의 경우에 price 속성을 추가하여 product_price 테이블을 따로 참조하지 않도록 하였다.**  
 <br/>
 이번 DAO에서는 SELECT 기능을 하는 부분에 더하여 INSERT와 UPDATE하는 기능을 추가로 구현했다.  
 
