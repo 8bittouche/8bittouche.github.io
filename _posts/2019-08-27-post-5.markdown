@@ -27,20 +27,20 @@ image: '/images/posts/boostcourse.JPG'
 
 # 1. 메인페이지 리다이렉트(Redirect)  
 처음에 기존에 실습했던 것처럼 Controller에서 리다이렉트하도록 시도하였다.  
-@Controller가 붙어있는 부분에서 "redirect:/mainpage"와 같이 리다이렉트했을 때 화면전환이 잘 이루어졌었다.  
-하지만 API Controller에 @RestController를 붙여놓아서 이에 대한 리다이렉트 방법을 찾아보았다.
+API Controller에 @RestController를 붙여놓아서 이에 대한 리다이렉트 방법을 찾아보았다.  
 [@RestController 리다이렉트 방법 링크1](https://cnpnote.tistory.com/entry/SPRING-spring4-RestController%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-jsp-%ED%8E%98%EC%9D%B4%EC%A7%80%EB%A5%BC-%EB%B0%98%ED%99%98%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)  
 [@RestController 리다이렉트 방법 링크2](https://stackoverflow.com/questions/29085295/spring-mvc-restcontroller-and-redirect)  
 하지만 어째서인지.. GET 요청으로 mainpage를 받아오지만 화면 전환이 이루어지지는 않았다.  
 구글링결과 @RestController는 뷰(View)를 반환하지 않고, 데이터를 반환하기 때문에 View전환이 이루어지지 않는다고 했다.  
 <br/>
-그 다음에는 @RestController로 선언된 부분을 @Controller로 바꾸고  
+그 다음에는 @RestController로 선언된 부분을 @Controller로 바꾸었다.   
 데이터 반환이 필요한 부분에는 @ResponseBody를 붙이고, 리다이렉트가 필요한 부분에는 "redirect:/mainpage"와 같이 작성해보았다.  
 하지만 이번에도 화면 전환이 되지는 않았다.  
 <br/>
 그래서 결국에는 FE단에서 window.location.href를 통해 메인페이지로 화면 전환을 이루었다.  
 이 부분에 대해서 문제가 될 것이라 생각하여 질문을 드렸는데.. 맞는 방식이라고 답변을 해주셨다.  
 <br/>
+**질문과 답변**
 ![Alt text](/images/posts/post_5/post_5_question_1.JPG)<br/>
 ![Alt text](/images/posts/post_5/post_5_answer_1.JPG)<br/>
 
@@ -49,7 +49,17 @@ image: '/images/posts/boostcourse.JPG'
 
 # 2. FeedBack  
 ![Alt text](/images/posts/post_5/post_5_feedback_1.JPG)<br/>
-![Alt text](/images/posts/post_5/post_5_feedback_2.JPG)<br/>
-![Alt text](/images/posts/post_5/post_5_feedback_3.JPG)<br/>
-![Alt text](/images/posts/post_5/post_5_feedback_4.JPG)<br/>
 
+![Alt text](/images/posts/post_5/post_5_feedback_2.JPG)<br/>
+기존에 java코드에서 따로 함수를 작성하여 구하였던 AverageScore를 SQL을 통해 구하는 것으로 변경하였다.  
+코드가 더 깔끔해진 느낌을 받았다.  
+
+![Alt text](/images/posts/post_5/post_5_feedback_3.JPG)<br/>
+이 부분은 전혀 몰랐었던 부분이다.  
+Service 메소드에서 DB에 접근하는 경우는 전부 @Transactional 애노테이션을 붙여야하는 것으로 알고 있었다.  
+insert, update, delete를 방지하는 것이 아닌 단순 조회 기능을 하는 메소드에는 @Transactional을 붙이지않는 것으로 수정하였다.  
+역시, 쓸데없는 코드를 최대한 없애려고 노력해야한다는 걸 느꼈다.  
+
+![Alt text](/images/posts/post_5/post_5_feedback_4.JPG)<br/>
+프로젝트 시작 처음에 테스트코드를 몇 번 작성해보았는데 그 이후에는 잘 사용하지 않았었다.  
+앞으로 프로젝트를 진행하면서 테스트 코드를 작성하여 확인하는 습관을 길러야겠다.  
