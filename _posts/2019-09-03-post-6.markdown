@@ -46,8 +46,11 @@ image: '/images/posts/boostcourse.JPG'
 모든 값이 유효할 때만 예약하기 버튼이 활성화되도록 하였다.  
 ![Alt text](/images/posts/post_6/post_6_feedback_1_1.JPG)
 <br/>
+<br/>
 
 *****
+
+<br/>
 
 # 2. 취소 팝업 
 취소 팝업의 경우 마우스 클릭 이벤트에만 동작하도록 구현하였었다.  
@@ -59,8 +62,9 @@ image: '/images/posts/boostcourse.JPG'
 이 때 발생할 수 있는 'focus', 'keydown', 'click'의 다양한 이벤트를 고려하여 등록해줘야 했다.  
 ![Alt text](/images/posts/post_6/post_6_feedback_4_1.JPG){: width="400px" height="300px" }<br/>
 
-
+<br/>
 *****
+<br/>
 
 # 3. FeedBack
 ![Alt text](/images/posts/post_6/post_6_feedback_5.JPG){: height="300px"}<br/>
