@@ -44,7 +44,7 @@ image: '/images/posts/boostcourse.JPG'
 <br/>
 이 부분에 대해서는 인터넷에서 접근하기 쉬운 난독화 사이트를 통해 난독화 처리하였다.  
 [난독화 사이트 링크](http://dean.edwards.name/packer/)  
-![Alt text](/images/posts/post_7/post_7_feedback_2_1.JPG)<br/>
+
 
 *****
 
