@@ -29,11 +29,23 @@ image: '/images/posts/boostcourse.JPG'
 *****
 
 # 1. 보안 관련 질문 & 답변
-보안 관련 문제는 생소하여 제출할 때 궁금한 사항을 몇 가지 질문했다.  
+보안 관련 문제는 생소하여 제출할 때 궁금한 사항을 몇 가지 질문했다. 
+<br/> 
 ![Alt text](/images/posts/post_8/post_8_feedback_1.JPG)<br/>
-
+<br/>
+보안 관련 개념이나 이슈는 학교에서 관련 수업을 안들었고, 평소에 관심을 두지 않던 부분이라 생소한 용어들이 많았다.  
+개발자로서 이런 부분을 고려한다면 한층 더 수준높은 코딩을 할 수 있을 것 같다.  
 
 
 *****
 
+
 # 2. FeedBack
+![Alt text](/images/posts/post_8/post_8_feedback_2.JPG)<br/>
+반복되는 코드에 대해 깔끔하게 정리해주셨다.  
+반복되는 기능을 함수로 선언하여 재사용하였다. 확실히 코드가 깔끔해졌다.  
+<br/>
+보안 관련하여 질문이 있었던 만큼 보안 관련하여 피드백을 많이 해주셨다.  
+![Alt text](/images/posts/post_8/post_8_feedback_3.JPG)<br/>
+![Alt text](/images/posts/post_8/post_8_feedback_4.JPG)<br/>
+![Alt text](/images/posts/post_8/post_8_feedback_5.JPG)<br/>
