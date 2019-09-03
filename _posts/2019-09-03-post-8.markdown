@@ -33,12 +33,14 @@ image: '/images/posts/boostcourse.JPG'
 <br/> 
 ![Alt text](/images/posts/post_8/post_8_feedback_1.JPG)<br/>
 <br/>
-보안 관련 개념이나 이슈는 학교에서 관련 수업을 안들었고, 평소에 관심을 두지 않던 부분이라 생소한 용어들이 많았다.  
+보안 관련 개념이나 이슈는 학교에서 관련 수업을 안들었던데다가 평소에 관심을 두지 않던 부분이라 생소한 용어들이 많았다.  
 개발자로서 이런 부분을 고려한다면 한층 더 수준높은 코딩을 할 수 있을 것 같다.  
 
+<br/>
 
 *****
 
+<br/>
 
 # 2. FeedBack
 ![Alt text](/images/posts/post_8/post_8_feedback_2.JPG)<br/>
