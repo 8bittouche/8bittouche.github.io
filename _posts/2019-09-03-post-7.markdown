@@ -29,8 +29,8 @@ image: '/images/posts/boostcourse.JPG'
 *****
 
 # 1. 잘못된 정규표현식
-기존의 정규표현식이 '.' 이하의 내용이 적용되지 않았다.  
-찾아보니 정규표현식에서 '.'은 '\.'으로 표현해야 했다.   
+기존의 정규표현식이 .(dot) 이하의 내용이 적용되지 않았다.  
+찾아보니 정규표현식에서 .은 \.으로 표현해야 했다.   
 ![Alt text](/images/posts/post_7/post_7_feedback_1.JPG)<br/>
 
 
