@@ -66,3 +66,5 @@ image: '/images/posts/boostcourse.JPG'
 ![Alt text](/images/posts/post_6/post_6_feedback_5.JPG){: height="300px"}<br/>
 ![Alt text](/images/posts/post_6/post_6_feedback_6.JPG)<br/>
 ![Alt text](/images/posts/post_6/post_6_feedback_7.JPG)<br/>
+<br/>
+![Alt text](/images/posts/post_6/post_6_feedback_8.JPG)<br/>
