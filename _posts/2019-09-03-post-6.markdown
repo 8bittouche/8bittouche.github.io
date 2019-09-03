@@ -42,7 +42,7 @@ image: '/images/posts/boostcourse.JPG'
 ![Alt text](/images/posts/post_6/post_6_feedback_2.JPG){: width="800px"}<br/>
 <br/>
 이 부분을 개선하여 아래와 같이 동작하도록 구현하였다.  
-![Alt text](/images/posts/post_6/post_6_feedback_1_1.JPG)<br/>
+![Alt text](/images/posts/post_6/post_6_feedback_1_1.JPG){: width="400px" height="600px" .aligncenter}<br/>
 
 *****
 
@@ -54,12 +54,12 @@ image: '/images/posts/boostcourse.JPG'
 
 취소 팝업의 경우에도 사용자가 마우스 클릭과 키보드 탭으로 접근하는 경우를 나누어 구현해야했고  
 이 때 발생할 수 있는 다양한 이벤트를 고려하여 등록해줘야 했다.  
-![Alt text](/images/posts/post_6/post_6_feedback_4_1.JPG)<br/>
+![Alt text](/images/posts/post_6/post_6_feedback_4_1.JPG){: width="400px" height="300px" .aligncenter}<br/>
 
 
 *****
 
 # 3. FeedBack
-![Alt text](/images/posts/post_6/post_6_feedback_5.JPG)<br/>
+![Alt text](/images/posts/post_6/post_6_feedback_5.JPG){: height="300px"}<br/>
 ![Alt text](/images/posts/post_6/post_6_feedback_6.JPG)<br/>
 ![Alt text](/images/posts/post_6/post_6_feedback_7.JPG)<br/>
