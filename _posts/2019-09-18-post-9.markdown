@@ -93,7 +93,7 @@ WebMvcContextConfiguration.java 설정 파일에 인터셉터 설정을 등록�
 <br/>
 
 # 6. FAIL
-![Alt text](/images/posts/post_9/post_9_fail.JPG)<br/>
+![Alt text](/images/posts/post_9/post_9_fail.JPG){: width="700px"}<br/>
 FileInfo를 DB에 저장할 때 SAVE_FILE_PATH(c:/tmp/)를 붙여서 저장하고  
-ImageDownloadController에서 ROOT_FOLDER를 붙여서 다운로드하고 있기 때문에  
+ImageDownloadController에서 ROOT_FOLDER(c:/tmp/)를 붙여서 다운로드하고 있기 때문에  
 경로가 c:/tmp/c:/tmp/로 중복되어 한 줄 평 이미지가 다운로드되지 않는 문제가 있었다.  
