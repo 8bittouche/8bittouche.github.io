@@ -43,7 +43,7 @@ DTO -> DAO -> Service -> Controller 순으로 작성하였고, Servie Layer에 �
 파일업로드 부분에서는 2가지를 신경써서 구현하였다.  
 <br/>
 
-**1) 파일 이름과 확장자 유효성 검증**
+**1) 파일 이름과 확장자 유효성 검증**  
 유효성 검증을 프론트 엔드 단에서 하고 있지만 지난 번 리뷰에서 보안 이슈 관련 리뷰를 받았었다.  
 프론트 엔드 단에서만 보안을 대비하면 충분히 코드 수정이 가능하여 DB 무결성을 해칠 수 있다.  
 따라서 백엔드 단에서 보안 이슈를 다뤄줘야 한다고 했다.  
@@ -85,3 +85,15 @@ WebMvcContextConfiguration.java 설정 파일에 인터셉터 설정을 등록�
 
 # 5. FeedBack
 ![Alt text](/images/posts/post_9/post_9_feedback_1.JPG)<br/>
+
+<br/>
+
+*****
+
+<br/>
+
+# 6. FAIL
+![Alt text](/images/posts/post_9/post_9_fail.JPG)<br/>
+FileInfo를 DB에 저장할 때 SAVE_FILE_PATH(c:/tmp/)를 붙여서 저장하고  
+ImageDownloadController에서 ROOT_FOLDER를 붙여서 다운로드하고 있기 때문에  
+경로가 c:/tmp/c:/tmp/로 중복되어 한 줄 평 이미지가 다운로드되지 않는 문제가 있었다.  
