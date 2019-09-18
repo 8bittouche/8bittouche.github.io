@@ -1,0 +1,39 @@
+﻿---
+layout: post
+title: '[BoostCourse] 웹 프로그래밍 프로젝트 6-1 / 예약서비스: 한 줄 평 등록(BE) / 2차 제출(PASS)'
+tags: [BoostCourse]
+image: '/images/posts/boostcourse.JPG'
+---
+
+### *본 포스팅은 부스트코스 웹 프로그래밍 에이스 과정 학습내용공유 미션입니다.*  
+
+<br/>
+
+# 0. 요약
+###### - 프로젝트 6는 한 줄 평 등록 페이지를 구현한다.
+###### - 프로젝트 6의 FE는 별점 매기기, 한 줄 평 내용, 사진 추가 기능을 구현한다.
+###### - 프로젝트 6의 BE는 한 줄 평 기능을 하는 ReservationAPI, 파일업로드, 인터셉터를 이용한 로그 남기기, 이미지 다운로드 컨트롤러를 구현한다.
+
+
+<br/>
+
+아래 기능을 하는 API를 구현한다.  
+![Alt text](/images/posts/post_9/post_9_api.JPG)<br/>
+
+<br/>
+저번에 한 줄 평 이미지 다운로드 경로가 겹치는 부분을 수정하고, 리뷰받은 부분을 반영하여 PASS를 받았다.  
+
+<br/>
+
+*****
+
+<br/>
+
+# 1. FeedBack
+![Alt text](/images/posts/post_10/post_10_feedback_1.JPG)<br/>
+![Alt text](/images/posts/post_10/post_10_feedback_2.JPG)<br/>
+![Alt text](/images/posts/post_10/post_10_feedback_3.JPG)<br/>
+![Alt text](/images/posts/post_10/post_10_feedback_4.JPG)<br/>
+![Alt text](/images/posts/post_10/post_10_feedback_5.JPG)<br/>
+Java 8의 Stream 문법이 생소하지만 실무에서는 Stream 문법을 잘 사용하는 것 같다.  
+자주 사용하도록 해야겠다.  
